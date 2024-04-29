@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Page</title>
+            <!-- additional header meta tags -->
+        <meta name="description" content="Your one stop wristwach shop for your needs">
+        <meta name="keywords" content="shop, buy, sell">
+        <meta name="author" content="Paulofph">
+    
+        <!-- website icon -->
+        <link rel="icon" href="/build/img/2024_01_16_09_59_IMG_9538.PNG" type="image/x-icon">
+    
+        <!-- Open Graph Starts -->
+        <meta property="og:title" content="wristwach Shop">
+        <meta property="og:description" content="Your one stop fashion shop for your needs">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website article or video">
+        <!-- Open Graph Ends -->
+    <link rel="stylesheet" href="/build/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <nav class="navsection flex items-center bg-black justify-between fixed w-full p-1 z-10">
+        <div>
+            <a href="/build/index.html"><img class="w-16 p-2" src="/build/img/2024_01_16_09_59_IMG_9538.PNG" alt="..."></a>
+        </div>
+        <ul class="sidebar flex flex-col md:items-center md:gap-[4vw] gap-8 p-3">
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"   href="#home, #services"><ion-icon name="close"></ion-icon></a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html">Home</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#category">Category</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/summercollections.html">Collection</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#blogs">Blogs</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#contact">Contact</a></li>
+            <li><a class="hover:text-[#f49f28]"  href="/login/login.html">Sign in</a></li>
+        </ul>
+
+        <ul class=" nav flex flex-row md:items-center md:gap-[4vw] gap-8">
+            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]"href="/build/index.html">Home</a></li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#category">Category</a></li>
+            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]" href="/build/summercollections.html">Collections</a></li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#blogs">Blogs</a></li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <li class="menu-button hover:text-[#f49f28] text-white" onclick=showSidebar()><a href="#home, #category"><ion-icon name="menu"></ion-icon></a></li>
+            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="search"></ion-icon>
+            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="person"></ion-icon>
+            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="settings"></ion-icon>
+            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="mail-unread"></ion-icon>                <!-- <li class="hideOnMobile list-none border-[#f49f28] border text-white px-5 py-2 rounded-full hover:bg-[#f49f28]"><button>Sign in</button></li> -->
+        </div>
+        <!-- <li class="hideOnMobile"><a class="hover:text-gray-500 list-none" href="/login/login.html">Login / Signup</a></li> -->
+        
+    </nav>
+
+    <div class="content pt-16 ps-4">
+        <h1 class="mb-8 max-w[400px] ms-auto text-[30px] font-bold text-center">A brand new way to shopping</h1>
+        <div class="tabs">
+          <button class="tab__btn active" data-tab="1">Login</button>
+          <span></span>
+          <button class="tab__btn" data-tab="2">Signup</button>
+        </div>
+        <div id="login" class="tabs__panel">
+          <div class="panel active" data-panel="1">
+            <form action="/">
+              <div class="input__group">
+                <input type="email" placeholder=" " required/>
+                <label for="email">Email</label>
+              </div>
+              <div class="input__group">
+                <input type="password" id="login-password" placeholder=" " required />
+                <label for="login-password">Password</label>
+                <span id="login-password-eye">
+                  <i class="ri-eye-off-fill"></i>
+                </span>
+              </div>
+              <button><a href="/build/index.html">Login</a></button>
+              <p>or</p>
+              <a href="#">Forgot your password?</a>
+            </form>
+          </div>
+          <div class="panel" data-panel="2">
+            <form action="/">
+              <div class="input__group">
+                <input type="email" placeholder=" " required />
+                <label for="email">Email</label>
+              </div>
+              <div class="input__group">
+                <input type="password" id="signup-password" placeholder=" " required />
+                <label for="signup-password">Password</label>
+                <span id="signup-password-eye">
+                  <i class="ri-eye-off-fill"></i>
+                </span>
+              </div>
+              <div class="input__group">
+                <input type="password" id="confirm-password" placeholder=" " required />
+                <label for="confirm-password">Confirm Password</label>
+                <span id="confirm-password-eye">
+                  <i class="ri-eye-off-fill"></i>
+                </span>
+              </div>
+              <button><a href="">Signup</a></button>
+              <p>or</p>
+              <a href="/build/signup.html">Already have an account?Login</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside id="contact" class="active aside3 bg-black text-white w-full justify-evenly flex flex-wrap mt-auto p-[70px]">
+
+        <div class=" flex-wrap  footer-col min-w-[25%]">
+            <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Category</h4>
+            <ul>
+                <li class="opacity-70 hover:opacity-100"><a href="#home">Apple Watch</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#services">Digital Watch</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#brands">Main Watch</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#contact">Analog Watch</a></li>
+            </ul>
+        </div><br><br><br><br><br><br><br><br>
+
+
+        <div class=" flex-wrap  footer-col min-w-[25%]">
+            <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Collections</h4>
+            <ul>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Casio Watch</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Vintage Watch</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Adventure Sports</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Luxury Watch</a></li>
+            </ul>
+        </div><br><br><br><br><br><br><br><br>
+        
+        <div class=" flex-wrap  footer-col min-w-[25%]">
+            <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Contact Us</h4>
+            <ul>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Shop #23 Birabi,<br> street GRA P.H.</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#">+25 646 4456 432</a></li>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Birabi@gmail.com</a></li>
+            </ul>
+        </div><br><br><br><br><br><br><br><br>
+
+        <div class=" flex-wrap  footer-col min-w-[25%]">
+            <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Newsletter</h4>
+            <ul>
+                <li class="opacity-70 hover:opacity-100"><a href="#">Subscribe to receive <br> our latest news</a></li>
+                <!-- <li><input class="border border-black rounded-full p-1" type="email"placeholder="enter your email"></li> -->
+                <br><div class="links">
+                    <a class="opacity-70 text-3xl hover:opacity-100" target="_blank" href="https://www.linkedin.com/in/chibueze-adibe-280126282?trk=contact-info"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a class="opacity-70 m-2 text-3xl hover:opacity-100" target="_blank" href="https://twitter.com/paul_adibe"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a class="opacity-70 m-1 text-3xl hover:opacity-100" target="_blank" href="https://www.instagram.com/graphic_designer_in_ph?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>        
+            </ul>
+        </div><br>
+    </aside><hr>
+
+    <footer class="bg-black text-white text-center p-2">
+       &#169; Copyright Paulofph 2024 All rights reserved.
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                const currentLink = event.target;
+                navLinks.forEach(link => link.parentNode.classList.remove('active'));
+                currentLink.parentNode.classList.add('active');
+            });
+        });
+
+
+        // login
+        const tabList = document.querySelector(".tabs");
+
+        tabList.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+
+        const tabIndex = e.target.dataset.tab;
+        if (!tabIndex) return;
+
+        const tabs = document.querySelectorAll("[data-tab]");
+        Array.from(tabs).forEach((tab) => {
+            if (tab.dataset.tab === tabIndex) {
+            tab.classList.add("active");
+            } else {
+            tab.classList.remove("active");
+            }
+        });
+
+        const activePanel = document.querySelector(".panel.active");
+        const toActivePanel = document.querySelector(`[data-panel="${tabIndex}"]`);
+        activePanel.classList.add("close");
+        activePanel.addEventListener(
+            "animationend",
+            (e) => {
+            activePanel.classList.remove("active");
+            activePanel.classList.remove("close");
+            toActivePanel.classList.add("active");
+            },
+            {
+            once: true,
+            }
+        );
+        });
+
+        const showHidePasswords = (type) => {
+        const passwordButton = document.getElementById(`${type}-password-eye`);
+        passwordButton.addEventListener("click", (e) => {
+            const passwordInput = document.getElementById(`${type}-password`);
+            const icon = passwordButton.querySelector("i");
+            const isVisible = icon.classList.contains("ri-eye-fill");
+            passwordInput.type = isVisible ? "password" : "text";
+            icon.setAttribute("class", isVisible ? "ri-eye-off-fill" : "ri-eye-fill");
+        });
+        };
+
+        showHidePasswords("login");
+        showHidePasswords("signup");
+        showHidePasswords("confirm");
+    </script>
+</body>
+</html>
