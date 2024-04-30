@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zircon_Accesories</title>
-            <!-- additional header meta tags -->
-        <meta name="description" content="Your one stop wristwach shop for your needs">
-        <meta name="keywords" content="shop, buy, sell">
-        <meta name="author" content="Paulofph">
-    
-        <!-- website icon -->
-        <link rel="icon" href="/build/img/2024_01_16_09_59_IMG_9538.PNG" type="image/x-icon">
-    
-        <!-- Open Graph Starts -->
-        <meta property="og:title" content="wristwach Shop">
-        <meta property="og:description" content="Your one stop fashion shop for your needs">
-        <meta property="og:image" content="">
-        <meta property="og:url" content="">
-        <meta property="og:type" content="website article or video">
-        <!-- Open Graph Ends -->
+    <!-- additional header meta tags -->
+    <meta name="description" content="Your one stop wristwach shop for your needs">
+    <meta name="keywords" content="shop, buy, sell">
+    <meta name="author" content="Paulofph">
+
+    <!-- website icon -->
+    <link rel="icon" href="/build/img/2024_01_16_09_59_IMG_9538.PNG" type="image/x-icon">
+
+    <!-- Open Graph Starts -->
+    <meta property="og:title" content="wristwach Shop">
+    <meta property="og:description" content="Your one stop fashion shop for your needs">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website article or video">
+    <!-- Open Graph Ends -->
     <link rel="stylesheet" href="/build/css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
+
 <body>
     <nav class="navsection flex items-center bg-black justify-between fixed w-full p-1 z-10">
         <div>
-            <a href="/build/index.html"><img class="w-16 p-2" src="/build/img/2024_01_16_09_59_IMG_9538.PNG" alt="..."></a>
+            <a href="/build/index.html"><img class="w-16 p-2" src="/build/img/2024_01_16_09_59_IMG_9538.PNG"
+                    alt="..."></a>
         </div>
         <ul class="sidebar flex flex-col md:items-center md:gap-[4vw] gap-8 p-3">
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"   href="#home, #services"><ion-icon name="close"></ion-icon></a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html">Home</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#category">Category</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/summercollections.html">Collection</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#blogs">Blogs</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#contact">Contact</a></li>
-            <li><a class="hover:text-[#f49f28]"  href="signup.html">Sign in</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]" href="#home, #services"><ion-icon
+                        name="close"></ion-icon></a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]" href="/build/index.html">Home</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]" href="/build/index.html#category">Category</a>
+            </li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"
+                    href="/build/summercollections.html">Collection</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]" href="/build/index.html#blogs">Blogs</a></li>
+            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]" href="/build/index.html#contact">Contact</a></li>
+            <li><a class="hover:text-[#f49f28]" href="signup.html">Sign in</a></li>
         </ul>
 
         <ul class=" nav flex flex-row md:items-center md:gap-[4vw] gap-8">
-            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]"href="/build/index.html">Home</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#category">Category</a></li>
-            <li class="hideOnMobile"><a class="active text-white hover:text-[#f49f28]" href="/build/summercollections.html">Collections</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#blogs">Blogs</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#contact">Contact</a></li>
+            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]" href="/build/index.html">Home</a></li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]"
+                    href="/build/index.html#category">Category</a></li>
+            <li class="hideOnMobile"><a class="active text-white hover:text-[#f49f28]"
+                    href="/build/summercollections.html">Collections</a></li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#blogs">Blogs</a>
+            </li>
+            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]"
+                    href="/build/index.html#contact">Contact</a></li>
         </ul>
 
         <div class="flex items-center gap-4">
-            <li class="menu-button hover:text-[#f49f28] text-white" onclick=showSidebar()><a href="#home, #category"><ion-icon name="menu"></ion-icon></a></li>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="search"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="person"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="settings"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="mail-unread"></ion-icon>                <!-- <li class="hideOnMobile list-none border-[#f49f28] border text-white px-5 py-2 rounded-full hover:bg-[#f49f28]"><button>Sign in</button></li> -->
+            <li class="menu-button hover:text-[#f49f28] text-white" onclick=showSidebar()><a
+                    href="#home, #category"><ion-icon name="menu"></ion-icon></a></li>
+            <ion-icon
+                class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile"
+                name="search"></ion-icon>
+            <ion-icon
+                class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile"
+                name="person"></ion-icon>
+            <ion-icon
+                class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile"
+                name="settings"></ion-icon>
+            <ion-icon
+                class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile"
+                name="mail-unread"></ion-icon>
+            <!-- <li class="hideOnMobile list-none border-[#f49f28] border text-white px-5 py-2 rounded-full hover:bg-[#f49f28]"><button>Sign in</button></li> -->
         </div>
         <!-- <li class="hideOnMobile"><a class="hover:text-gray-500 list-none" href="signup.html">Login / Signup</a></li> -->
-        
+
     </nav>
 
     <section id="collections" class="section3 flex flex-wrap justify-center pt-16">
@@ -63,15 +83,18 @@
             <div class="w-[45%] flex-wrap items-center text-left m-5">
                 <!-- <img src="/build/img/photography-studio-product-background_87720-55523-removebg-preview.png" alt=""> -->
                 <h2 class="font-bold text-5xl">Don't Miss The Moment</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem debitis harum aliquid nesciunt incidunt voluptatibus nostrum esse fuga, similique reiciendis tenetur nobis vel accusamus voluptatum odit consequuntur. Tempora, qui! </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem debitis harum aliquid nesciunt
+                    incidunt voluptatibus nostrum esse fuga, similique reiciendis tenetur nobis vel accusamus voluptatum
+                    odit consequuntur. Tempora, qui! </p>
                 <!-- <button class="p-3 w-44 bg-gradient-to-r from-[#f49f28] via-yellow-300 to-[#f49f28]  text-white text-sm m-5 rounded-3xl"><a href="">Explore</a></button> -->
-                <button class="p-3 w-44 bg-[#f49f28] hover:scale-110 text-white text-sm rounded-sm"><a href="signup.html">Shop Now</a></button>
+                <button class="p-3 w-44 bg-[#f49f28] hover:scale-110 text-white text-sm rounded-sm"><a
+                        href="signup.html">Shop Now</a></button>
             </div><br>
             <img class="w-auto grow" src="../build/img/MODERN SPORT SERIES - 42 MM DENALI Mens Watch _ ad.jpg" alt="">
         </div>
 
     </section>
-    
+
     <div class="mt-5 flex flex-wrap justify-center gap-6">
         <!-- <div style="background-position: center; background-size: contain; background-size: fit-content; background-repeat: no-repeat;" class="w-[50%] p-7 bg-[#f1f1f3]">
             <img src="/build/img/topwatches4you_com.jpg" alt="">
@@ -83,13 +106,15 @@
             <img src="/build/img/topwatches4you_com.jpg" alt="">
             <h3 class="text-4xl m-2">Timers Villa</h3>
             <p class="m-2">CHEONOOWAPH QOOM</p><br>
-            <button class="p-5 m-2 bg-transparent border border-[#f49f28] hover:bg-[#f49f28]"><a href="">Explore All</a></button>
+            <button class="p-5 m-2 bg-transparent border border-[#f49f28] hover:bg-[#f49f28]"><a href="">Explore
+                    All</a></button>
         </div>
         <div class="w-auto grow bg-[#f7f7f7]">
             <img src="/build/img/Orion Neomatik 41 Date.jpg" alt="">
             <h3 class="text-4xl m-2">Complete Mecanical</h3>
             <p class="m-2">Top Deal</p><br>
-            <button class="p-5 m-2 bg-transparent border border-[#f49f28] hover:bg-[#f49f28]"><a href="">Explore All</a></button>
+            <button class="p-5 m-2 bg-transparent border border-[#f49f28] hover:bg-[#f49f28]"><a href="">Explore
+                    All</a></button>
         </div>
     </div>
 
@@ -97,11 +122,11 @@
         <div class="flex  flex-wrap justify-center bg-[#f5f5f5] items-center">
             <div class="w-[45%] flex-wrap items-center text-center">
                 <ion-icon class="-rotate-90 text-9xl" name="watch"></ion-icon> -->
-                <!-- <img src="/build/img/photography-studio-product-background_87720-55523-removebg-preview.png" alt=""> -->
-                <!-- <h2 class="font-bold text-5xl">Summer Collections</h2>
+    <!-- <img src="/build/img/photography-studio-product-background_87720-55523-removebg-preview.png" alt=""> -->
+    <!-- <h2 class="font-bold text-5xl">Summer Collections</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem debitis harum aliquid nesciunt incidunt voluptatibus nostrum esse fuga, similique reiciendis tenetur nobis vel accusamus voluptatum odit consequuntur. Tempora, qui! </p> -->
-                <!-- <button class="p-3 w-44 bg-gradient-to-r from-[#f49f28] via-yellow-300 to-[#f49f28]  text-white text-sm m-5 rounded-3xl"><a href="">Explore</a></button> -->
-                <!-- <button class="p-3 w-44 bg-[#f49f28] hover:scale-110 text-white text-sm m-5 rounded-3xl"><a href="">Explore</a></button>
+    <!-- <button class="p-3 w-44 bg-gradient-to-r from-[#f49f28] via-yellow-300 to-[#f49f28]  text-white text-sm m-5 rounded-3xl"><a href="">Explore</a></button> -->
+    <!-- <button class="p-3 w-44 bg-[#f49f28] hover:scale-110 text-white text-sm m-5 rounded-3xl"><a href="">Explore</a></button>
             </div><br>
             <img class="w-auto grow" src="../build/img/happy-people-768x384.jpg" alt="">
         </div>
@@ -110,14 +135,16 @@
 
     <section id="collections">
         <main class="flex  gap-12 flex-wrap mt-10 justify-center">
-                
+
             <dl>
-                <h2 class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">Best Sellers</h2>
+                <h2
+                    class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">
+                    Best Sellers</h2>
                 <div class="flagscontainer flex items-center justify-center flex-wrap">
                     <a href=""> <img src="/build/img/51KU7FdP+oL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>                            
+                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>
                     </div>
 
                 </div><br>
@@ -126,7 +153,7 @@
                     <a href=""> <img src="/build/img/61Kzucjm0sL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>                            
+                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>
                     </div>
 
                 </div><br>
@@ -135,19 +162,21 @@
                     <a href=""> <img src="/build/img/71kbRVr8YfL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>                            
+                        <p class="text-[#f49f28]"><del class="text-black">$800.00</del> $500.00</p>
                     </div>
 
                 </div><br>
             </dl>
 
             <dl>
-                <h2 class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">New Arrival</h2>
+                <h2
+                    class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">
+                    New Arrival</h2>
                 <div class="flagscontainer flex items-center justify-center flex-wrap">
                     <a href=""> <img src="/build/img/71prDFauu2L._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
@@ -156,7 +185,7 @@
                     <a href=""> <img src="/build/img/71RpLzv1mIL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
@@ -165,19 +194,21 @@
                     <a href=""> <img src="/build/img/71S-CCwawqL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
-                
+
             </dl>
             <dl>
-                <h2 class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">Best Rated</h2>
+                <h2
+                    class="relative mb-7 font-normal text-2xl before:absolute before:left-0 before:-bottom-2 before:h-1 before:w-16 before:bg-[#f49f28]">
+                    Best Rated</h2>
                 <div class="flagscontainer flex items-center justify-center flex-wrap">
                     <a href=""> <img src="/build/img/71YGKRgxgXL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
@@ -185,7 +216,7 @@
                     <a href=""> <img src="/build/img/818lBoWqXtL._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
@@ -193,20 +224,23 @@
                     <a href=""> <img src="/build/img/81d1RChIOoS._AC_US218_.jpg" alt="Image" class="flags"></a>
                     <div class="text flex-col">
                         <h5>Plastic gdsdfr</h5>
-                        <p class="text-[#f49f28]">$500.00</p>                            
+                        <p class="text-[#f49f28]">$500.00</p>
                     </div>
 
                 </div><br>
-                
+
             </dl>
-        
-        
+
+
         </main>
 
-        <aside id="contact" class="active aside3 bg-black text-white w-full justify-evenly flex flex-wrap mt-auto p-[70px]">
+        <aside id="contact"
+            class="active aside3 bg-black text-white w-full justify-evenly flex flex-wrap mt-auto p-[70px]">
 
             <div class=" flex-wrap  footer-col min-w-[25%]">
-                <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Category</h4>
+                <h4
+                    class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">
+                    Category</h4>
                 <ul>
                     <li class="opacity-70 hover:opacity-100"><a href="#home">Apple Watch</a></li>
                     <li class="opacity-70 hover:opacity-100"><a href="#services">Digital Watch</a></li>
@@ -214,10 +248,12 @@
                     <li class="opacity-70 hover:opacity-100"><a href="#contact">Analog Watch</a></li>
                 </ul>
             </div><br><br><br><br><br><br><br><br>
-    
-    
+
+
             <div class=" flex-wrap  footer-col min-w-[25%]">
-                <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Collections</h4>
+                <h4
+                    class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">
+                    Collections</h4>
                 <ul>
                     <li class="opacity-70 hover:opacity-100"><a href="#">Casio Watch</a></li>
                     <li class="opacity-70 hover:opacity-100"><a href="#">Vintage Watch</a></li>
@@ -225,54 +261,67 @@
                     <li class="opacity-70 hover:opacity-100"><a href="#">Luxury Watch</a></li>
                 </ul>
             </div><br><br><br><br><br><br><br><br>
-            
+
             <div class=" flex-wrap  footer-col min-w-[25%]">
-                <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Contact Us</h4>
+                <h4
+                    class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">
+                    Contact Us</h4>
                 <ul>
                     <li class="opacity-70 hover:opacity-100"><a href="#">Shop #23 Birabi,<br> street GRA P.H.</a></li>
                     <li class="opacity-70 hover:opacity-100"><a href="#">+25 646 4456 432</a></li>
                     <li class="opacity-70 hover:opacity-100"><a href="#">Birabi@gmail.com</a></li>
                 </ul>
             </div><br><br><br><br><br><br><br><br>
-    
+
             <div class=" flex-wrap  footer-col min-w-[25%]">
-                <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Newsletter</h4>
+                <h4
+                    class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">
+                    Newsletter</h4>
                 <ul>
-                    <li class="opacity-70 hover:opacity-100"><a href="#">Subscribe to receive <br> our latest news</a></li>
+                    <li class="opacity-70 hover:opacity-100"><a href="#">Subscribe to receive <br> our latest news</a>
+                    </li>
                     <!-- <li><input class="border border-black rounded-full p-1" type="email"placeholder="enter your email"></li> -->
-                    <br><div class="links">
-                        <a class="opacity-70 text-3xl hover:opacity-100" target="_blank" href="https://www.linkedin.com/in/chibueze-adibe-280126282?trk=contact-info"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a class="opacity-70 m-2 text-3xl hover:opacity-100" target="_blank" href="https://twitter.com/paul_adibe"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a class="opacity-70 m-1 text-3xl hover:opacity-100" target="_blank" href="https://www.instagram.com/graphic_designer_in_ph?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><ion-icon name="logo-instagram"></ion-icon></a>
-                    </div>        
+                    <br>
+                    <div class="links">
+                        <a class="opacity-70 text-3xl hover:opacity-100" target="_blank"
+                            href="https://www.linkedin.com/in/chibueze-adibe-280126282?trk=contact-info"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                        <a class="opacity-70 m-2 text-3xl hover:opacity-100" target="_blank"
+                            href="https://twitter.com/paul_adibe"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a class="opacity-70 m-1 text-3xl hover:opacity-100" target="_blank"
+                            href="https://www.instagram.com/graphic_designer_in_ph?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><ion-icon
+                                name="logo-instagram"></ion-icon></a>
+                    </div>
                 </ul>
             </div><br>
-        </aside><hr>
-    
+        </aside>
+        <hr>
+
         <footer class="bg-black text-white text-center p-2">
-           &#169; Copyright Paulofph 2024 All rights reserved.
+            &#169; Copyright Paulofph 2024 All rights reserved.
         </footer>
 
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
 
-        const navLinks = document.querySelectorAll('.nav-link');
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', event => {
-                const currentLink = event.target;
-                navLinks.forEach(link => link.parentNode.classList.remove('active'));
-                currentLink.parentNode.classList.add('active');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', event => {
+                    const currentLink = event.target;
+                    navLinks.forEach(link => link.parentNode.classList.remove('active'));
+                    currentLink.parentNode.classList.add('active');
+                });
             });
-        });
-    </script>
+        </script>
 </body>
+
 </html>
