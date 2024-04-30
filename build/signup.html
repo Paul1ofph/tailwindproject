@@ -25,56 +25,61 @@
 
 </head>
 <body>
+  <div class="container">
+    <!-- <div class="logo">
+      <a href="#"><img src="/build/img/2024_01_16_09_59_IMG_9538.PNG" alt="logo" /></a>
+
+      <a href=""><ion-icon name="bag-handle-outline" ></ion-icon>Atech Shop</a>
+    </div> -->
     <nav class="navsection flex items-center bg-black justify-between fixed w-full p-1 z-10">
-        <div>
-            <a href="/build/index.html"><img class="w-16 p-2" src="/build/img/2024_01_16_09_59_IMG_9538.PNG" alt="..."></a>
-        </div>
-        <ul class="sidebar flex flex-col md:items-center md:gap-[4vw] gap-8 p-3">
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"   href="#home, #services"><ion-icon name="close"></ion-icon></a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html">Home</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#category">Category</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/summercollections.html">Collection</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#blogs">Blogs</a></li>
-            <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="/build/index.html#contact">Contact</a></li>
-            <li><a class="hover:text-[#f49f28]"  href="/login/login.html">Sign in</a></li>
-        </ul>
+      <div>
+          <a href=""><img class="w-16 p-2" src="/build/img/2024_01_16_09_59_IMG_9538.PNG" alt="..."></a>
+      </div>
+      <ul class="sidebar flex flex-col md:items-center md:gap-[4vw] gap-8 p-3">
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"   href="#home, #services"><ion-icon name="close"></ion-icon></a></li>
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="#home">Home</a></li>
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="#category">Category</a></li>
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="#collections">Collection</a></li>
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="#blogs">Blogs</a></li>
+          <li onclick=hideSidebar()><a class="hover:text-[#f49f28]"  href="#contact">Contact</a></li>
+          <li><a class="hover:text-[#f49f28]"  href="signup.html">Sign in</a></li>
+      </ul>
 
-        <ul class=" nav flex flex-row md:items-center md:gap-[4vw] gap-8">
-            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]"href="/build/index.html">Home</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#category">Category</a></li>
-            <li class="hideOnMobile"><a class=" text-white hover:text-[#f49f28]" href="/build/summercollections.html">Collections</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#blogs">Blogs</a></li>
-            <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="/build/index.html#contact">Contact</a></li>
-        </ul>
+      <ul class=" nav flex flex-row md:items-center md:gap-[4vw] gap-8">
+          <li class="hideOnMobile active"><a class=" active text-white hover:text-[#f49f28]"href="#home">Home</a></li>
+          <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="#category">Category</a></li>
+          <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="#collections">Collections</a></li>
+          <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="#blogs">Blogs</a></li>
+          <li class="hideOnMobile"><a class="text-white hover:text-[#f49f28]" href="#contact">Contact</a></li>
+      </ul>
 
-        <div class="flex items-center gap-4">
-            <li class="menu-button hover:text-[#f49f28] text-white" onclick=showSidebar()><a href="#home, #category"><ion-icon name="menu"></ion-icon></a></li>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="search"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="person"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="settings"></ion-icon>
-            <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="mail-unread"></ion-icon>                <!-- <li class="hideOnMobile list-none border-[#f49f28] border text-white px-5 py-2 rounded-full hover:bg-[#f49f28]"><button>Sign in</button></li> -->
-        </div>
-        <!-- <li class="hideOnMobile"><a class="hover:text-gray-500 list-none" href="/login/login.html">Login / Signup</a></li> -->
-        
+      <div class="flex items-center gap-4">
+        <li class="menu-button hover:text-[#f49f28] text-white" onclick=showSidebar()><a href="#home, #category"><ion-icon name="menu"></ion-icon></a></li>
+        <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="search"></ion-icon>
+        <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="person"></ion-icon>
+        <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="settings"></ion-icon>
+        <ion-icon class="hover:bg-[#f49f28] hover:text-black hover:p-1 hover:rounded-md text-white text-sm hideOnMobile" name="mail-unread"></ion-icon>                
+        <!-- <li class="hideOnMobile list-none border-[#f49f28] border text-white px-5 py-2 rounded hover:bg-[#f49f28]"><a href="/build/signup.html"><button>Sign in</button></a></li> -->
+        <!-- <li class="hideOnMobile"><a class="hover:bg-[#f49f28] hover:text-black p-[5px] rounded text-white list-none" href="/login/login.html">Login / Signup</a></li> -->
+      </div>
     </nav>
-
-    <div class="content pt-16 ps-4">
+    <div class="content h-fit  pt-16 ps-4">
         <h1 class="mb-8 max-w[400px] ms-auto text-[30px] font-bold text-center">A brand new way to shopping</h1>
-        <div class="tabs">
-          <button class="tab__btn active" data-tab="1">Login</button>
+        <div class="tabs mb-[2rem] flex items-center justify-center gap-8">
+          <button class="tab__btn outline-none border-none text-base font-semibold text-[#676767] bg-transparent transition-[0.3s] cursor-pointer active" data-tab="1">Login</button>
           <span></span>
-          <button class="tab__btn" data-tab="2">Signup</button>
+          <button class="tab__btn outline-none border-none text-base font-semibold text-[#676767] bg-transparent transition-[0.3s] cursor-pointer" data-tab="2">Signup</button>
         </div>
         <div id="login" class="tabs__panel">
-          <div class="panel active" data-panel="1">
-            <form action="/">
-              <div class="input__group">
-                <input type="email" placeholder=" " required/>
-                <label for="email">Email</label>
+          <div class="panel hidden max-w-[400px] ms-auto active" data-panel="1">
+            <form class="grid" action="/">
+              <div class="input__group mb-[2rem] relative isolate flex items-center gap-4 border-b-[#676767] p-[0.75rem]">
+                <input class="w-full outline-none border-none text-base text-black bg-transparent" type="email" placeholder=" " required/>
+                <label class="absolute left-0 top-[50px] translate-y-[-50%] text-base text-black transition-[0.3s]" for="email">Email</label>
               </div>
-              <div class="input__group">
-                <input type="password" id="login-password" placeholder=" " required />
-                <label for="login-password">Password</label>
+              <div class="input__group mb-[2rem] relative isolate flex items-center gap-4 border-b-[#676767] p-[0.75rem]">
+                <input class="w-full outline-none border-none text-base text-black bg-transparent" type="password" id="login-password" placeholder=" " required />
+                <label class="absolute left-0 top-[50px] translate-y-[-50%] text-base text-black transition-[0.3s]" for="login-password">Password</label>
                 <span id="login-password-eye">
                   <i class="ri-eye-off-fill"></i>
                 </span>
@@ -84,22 +89,22 @@
               <a href="#">Forgot your password?</a>
             </form>
           </div>
-          <div class="panel" data-panel="2">
-            <form action="/">
-              <div class="input__group">
-                <input type="email" placeholder=" " required />
-                <label for="email">Email</label>
+          <div class="panel hidden max-w-[400px] ms-auto" data-panel="2">
+            <form class="grid" action="/">
+              <div class="input__group mb-[2rem] relative isolate flex items-center gap-4 border-b-[#676767] p-[0.75rem]">
+                <input class="w-full outline-none border-none text-base text-black bg-transparent" type="email" placeholder=" " required />
+                <label class="absolute left-0 top-[50px] translate-y-[-50%] text-base text-black transition-[0.3s]" for="email">Email</label>
               </div>
-              <div class="input__group">
-                <input type="password" id="signup-password" placeholder=" " required />
-                <label for="signup-password">Password</label>
+              <div class="input__group mb-[2rem] relative isolate flex items-center gap-4 border-b-[#676767] p-[0.75rem]">
+                <input class="w-full outline-none border-none text-base text-black bg-transparent" type="password" id="signup-password" placeholder=" " required />
+                <label class="absolute left-0 top-[50px] translate-y-[-50%] text-base text-black transition-[0.3s]" for="signup-password">Password</label>
                 <span id="signup-password-eye">
                   <i class="ri-eye-off-fill"></i>
                 </span>
               </div>
-              <div class="input__group">
-                <input type="password" id="confirm-password" placeholder=" " required />
-                <label for="confirm-password">Confirm Password</label>
+              <div class="input__group mb-[2rem] relative isolate flex items-center gap-4 border-b-[#676767] p-[0.75rem]">
+                <input class="w-full outline-none border-none text-base text-black bg-transparent" type="password" id="confirm-password" placeholder=" " required />
+                <label class="absolute left-0 top-[50px] translate-y-[-50%] text-base text-black transition-[0.3s]" for="confirm-password">Confirm Password</label>
                 <span id="confirm-password-eye">
                   <i class="ri-eye-off-fill"></i>
                 </span>
@@ -113,7 +118,7 @@
       </div>
     </div>
 
-    <!-- <aside id="contact" class="active aside3 bg-black text-white w-full justify-evenly flex flex-wrap mt-auto p-[70px]">
+    <aside id="contact" class="active aside3 bg-black text-white w-full justify-evenly flex flex-wrap mt-auto p-[70px]">
 
         <div class=" flex-wrap  footer-col min-w-[25%]">
             <h4 class="relative p-[5px, auto] mb-7 font-semibold text-2xl before:absolute before:left-0 before:-bottom-2 before:bg-white before:h-[2px] before:w-12">Category</h4>
@@ -156,11 +161,15 @@
                 </div>        
             </ul>
         </div><br>
-    </aside><hr> -->
+    </aside><hr>
 
-    <!-- <footer class="bg-black text-white text-center p-2">
+    <footer class="bg-black text-white text-center p-2">
        &#169; Copyright Paulofph 2024 All rights reserved.
-    </footer> -->
+    </footer>
+
+    </body>
+</html>
+
 
     <script>
         function showSidebar(){
@@ -233,5 +242,3 @@
         showHidePasswords("signup");
         showHidePasswords("confirm");
     </script>
-</body>
-</html>
