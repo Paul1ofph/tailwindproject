@@ -255,19 +255,6 @@ nav ion-icon{
 }
 
 
-
-
-@media (width > 768px) {
-  .container {
-    align-items: center;
-  }
-
-  .logo {
-    padding: 2rem 1rem;
-  }
-
-}
-
 /* .lineargradient{
     background: linear-gradient(150deg, #7a5534 #cfa549, #7a5534);
 }
